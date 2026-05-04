@@ -1,8 +1,6 @@
 import logging
 import os
 import re
-from dotenv import load_dotenv
-load_dotenv()
 from groq import Groq
 from datetime import datetime, time
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
