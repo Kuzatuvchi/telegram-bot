@@ -23,6 +23,8 @@ BOT_TOKEN    = os.environ.get("BOT_TOKEN")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 ADMIN_ID     = int(os.environ.get("ADMIN_ID"))
 
+client = Groq(api_key=GROQ_API_KEY)
+
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO
